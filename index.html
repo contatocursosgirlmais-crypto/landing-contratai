@@ -1,90 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Processo Seletivo — Hotelaria & Gastronomia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<title>Processo Seletivo — Hotelaria & Gastronomia</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'DM Sans', sans-serif;
-      background: #0a0c0f;
-      color: #f0f4f8;
-      text-align: center;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 5%;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
+<style>
+body {
+  margin:0;
+  background:#0a0c0f;
+  color:#f0f4f8;
+  font-family:'DM Sans',sans-serif;
+}
 
-    .btn {
-      background: #34d399;
-      padding: 12px 22px;
-      text-decoration: none;
-      color: #000;
-      font-weight: bold;
-      border-radius: 6px;
-      display: inline-block;
-    }
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 5%;
+  background:#0a0c0f;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index:1000;
+}
 
-    .hero {
-      padding: 100px 20px;
-    }
+.logo {
+  font-family:'Syne',sans-serif;
+  font-weight:800;
+}
 
-    .cta {
-      margin-top: 40px;
-    }
-  </style>
+.btn {
+  background:#34d399;
+  color:#000;
+  padding:12px 22px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:bold;
+  display:inline-block;
+  position:relative;
+  z-index:9999;
+  transition:0.2s;
+}
+
+.btn:hover {
+  transform:translateY(-2px);
+  box-shadow:0 6px 20px rgba(52,211,153,0.3);
+}
+
+.hero {
+  padding:140px 20px 80px;
+  text-align:center;
+}
+
+.hero h1 {
+  font-family:'Syne',sans-serif;
+  font-size:40px;
+  margin-bottom:20px;
+}
+
+.hero p {
+  color:#8b97a8;
+  max-width:500px;
+  margin:0 auto 30px;
+}
+
+.section {
+  padding:80px 20px;
+  text-align:center;
+}
+
+.footer {
+  padding:30px;
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,0.08);
+  color:#666;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h3>Seleção Hotelaria</h3>
+  <div class="logo">Seleção Hotelaria</div>
 
   <!-- BOTÃO 1 -->
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqLFzMx7RdRs5-f_AJUuwQcoWjzqUElyXlZAu3wT7c6bQnPQ/viewform"
      target="_blank"
-     class="btn">
+     class="btn"
+     data-track="header">
      Envie seu currículo
   </a>
 </header>
 
+<!-- HERO -->
 <section class="hero">
   <h1>Seu próximo trabalho começa aqui</h1>
-  <p>Processo seletivo moderno para hotelaria e gastronomia</p>
+
+  <p>
+    Processo seletivo moderno para hotelaria e gastronomia.
+    Chega de enviar currículo e não ter resposta.
+  </p>
 
   <!-- BOTÃO 2 -->
-  <div class="cta">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqLFzMx7RdRs5-f_AJUuwQcoWjzqUElyXlZAu3wT7c6bQnPQ/viewform"
-       target="_blank"
-       class="btn">
-       Participar do processo seletivo
-    </a>
-  </div>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqLFzMx7RdRs5-f_AJUuwQcoWjzqUElyXlZAu3wT7c6bQnPQ/viewform"
+     target="_blank"
+     class="btn"
+     data-track="hero">
+     Participar do processo seletivo
+  </a>
 </section>
 
-<section class="hero">
-  <h2>Pronto para dar o próximo passo?</h2>
-
-  <!-- BOTÃO 3 (CORRIGIDO) -->
-  <div class="cta">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqLFzMx7RdRs5-f_AJUuwQcoWjzqUElyXlZAu3wT7c6bQnPQ/viewform"
-       target="_blank"
-       class="btn">
-       Enviar meu currículo agora
-    </a>
-  </div>
+<!-- SEÇÃO -->
+<section class="section">
+  <h2>Processo rápido e direto</h2>
+  <p>Você preenche, nós analisamos e te conectamos com oportunidades reais.</p>
 </section>
+
+<!-- CTA FINAL -->
+<section class="section">
+  <h2>Pronto para trabalhar?</h2>
+
+  <!-- BOTÃO 3 -->
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqLFzMx7RdRs5-f_AJUuwQcoWjzqUElyXlZAu3wT7c6bQnPQ/viewform"
+     target="_blank"
+     class="btn"
+     data-track="cta">
+     Enviar meu currículo agora
+  </a>
+</section>
+
+<div class="footer">
+  Processo seletivo para hotelaria & gastronomia
+</div>
+
+<!-- PREPARADO PRA IA / TRACKING -->
+<script>
+document.querySelectorAll('a[data-track]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    console.log("Clique:", btn.dataset.track);
+    // aqui você pode integrar com IA depois
+  });
+});
+</script>
 
 </body>
 </html>
