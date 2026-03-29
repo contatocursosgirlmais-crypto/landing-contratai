@@ -1,9 +1,3 @@
-<!-- ATENÇÃO: SEU LINK DO FORM -->
-<!-- NÃO ALTERAR -->
-<script>
-const FORM_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSeqLFzMx7RdRs5-f_AJUuwQcoWjzqUElyXlZAu3wT7c6bQnPQ/viewform";
-</script>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -11,69 +5,86 @@ const FORM_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSeqLFzMx7RdRs5-f_AJU
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Processo Seletivo — Hotelaria & Gastronomia</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 
-  <!-- TODO SEU CSS ORIGINAL MANTIDO -->
-  <!-- (não mexi aqui) -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'DM Sans', sans-serif;
+      background: #0a0c0f;
+      color: #f0f4f8;
+      text-align: center;
+    }
 
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 5%;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .btn {
+      background: #34d399;
+      padding: 12px 22px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+    .hero {
+      padding: 100px 20px;
+    }
+
+    .cta {
+      margin-top: 40px;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
-  <a href="#" class="logo">
-    <span class="logo-dot"></span>
-    Seleção Hotelaria
-  </a>
+  <h3>Seleção Hotelaria</h3>
 
   <!-- BOTÃO 1 -->
-  <a href="#" class="btn-header form-link">Envie seu currículo</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqLFzMx7RdRs5-f_AJUuwQcoWjzqUElyXlZAu3wT7c6bQnPQ/viewform"
+     target="_blank"
+     class="btn">
+     Envie seu currículo
+  </a>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-  <h1>Seu próximo trabalho começa com quem <span>realmente valoriza talento</span></h1>
-
-  <p class="subheadline">
-    Processo seletivo moderno com análise inteligente
-  </p>
+  <h1>Seu próximo trabalho começa aqui</h1>
+  <p>Processo seletivo moderno para hotelaria e gastronomia</p>
 
   <!-- BOTÃO 2 -->
-  <a href="#" class="btn-hero form-link">Participar do processo seletivo</a>
+  <div class="cta">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqLFzMx7RdRs5-f_AJUuwQcoWjzqUElyXlZAu3wT7c6bQnPQ/viewform"
+       target="_blank"
+       class="btn">
+       Participar do processo seletivo
+    </a>
+  </div>
 </section>
 
-<!-- CTA FINAL -->
-<section class="cta-final">
-  <h2>Se você leva seu trabalho a sério, esse é o seu momento</h2>
+<section class="hero">
+  <h2>Pronto para dar o próximo passo?</h2>
 
-  <!-- BOTÃO 3 (AGORA CORRETO) -->
-  <a href="#" class="btn-cta form-link">Enviar meu currículo agora</a>
+  <!-- BOTÃO 3 (CORRIGIDO) -->
+  <div class="cta">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqLFzMx7RdRs5-f_AJUuwQcoWjzqUElyXlZAu3wT7c6bQnPQ/viewform"
+       target="_blank"
+       class="btn">
+       Enviar meu currículo agora
+    </a>
+  </div>
 </section>
-
-<!-- SCRIPT INTELIGENTE -->
-<script>
-/*
-  🔥 O CÉREBRO DO SISTEMA
-  - Atualiza TODOS os botões automaticamente
-  - Prepara base pra IA
-*/
-
-document.querySelectorAll('.form-link').forEach(btn => {
-  btn.href = FORM_LINK;
-  btn.target = "_blank";
-
-  // Tracking básico (futuro IA)
-  btn.addEventListener("click", () => {
-    console.log("Candidato clicou no formulário");
-
-    // Aqui depois você pode:
-    // enviar pro Make
-    // enviar pro webhook
-    // marcar lead qualificado
-  });
-});
-</script>
 
 </body>
 </html>
